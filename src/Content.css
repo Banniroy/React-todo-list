@@ -1,0 +1,68 @@
+main{
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+}
+
+main p{
+    margin-top: 1rem;
+}
+
+ul{
+    width: 100%;
+    list-style-type: none;
+    flex-grow: 1;
+}
+
+.item{
+    background-color: #ddd;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    margin: 0.25rem 0;
+}
+
+.item:first-child{
+    margin: 0;
+}
+
+.item input[type="checkbox"]{
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.item input[type="checkbox"]:focus + label{
+    text-decoration: underline;
+}
+
+.item > label{
+    font-size: 1rem;
+    padding-left: 1rem;
+    flex-grow: 1;
+}
+
+.item svg{
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: rgb(46, 71, 148);
+}
+
+.item svg:focus,
+.item svg:hover{
+    color: red;
+    outline: none;
+}
